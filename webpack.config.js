@@ -39,7 +39,7 @@ const config = {
         type: 'asset/resource',
         generator: {
           filename: ({ filename }) => {
-            const srcPath = 'src//fonts';
+            const srcPath = 'src/fonts';
             const regExp = new RegExp(
               `[\\\\/]?(?:${path.normalize(srcPath)}|node_modules)[\\\\/](.+?)$`,
             );
