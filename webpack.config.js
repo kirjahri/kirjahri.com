@@ -67,7 +67,7 @@ const config = {
         filename: 'scripts/[name].[contenthash:8].js',
       },
       css: {
-        filename: 'css/[name].[contenthash:8].css',
+        filename: 'styles/[name].[contenthash:8].css',
       },
     }),
   ],
