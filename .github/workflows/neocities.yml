@@ -1,0 +1,41 @@
+name: Build and Deploy to Neocities
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: deploy-to-neocities
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm and dependencies
+        with:
+          version: latest
+          run_install: true
+
+      - name: Build
+        run: pnpm build
+
+      - name: Deploy to Neocities
+        uses: bcomnes/deploy-to-neocities@v3
+        with:
+          api_key: $
+          cleanup: true
+          neocities_supporter: true
+          preview_before_deploy: true
+          dist_dir: dist
