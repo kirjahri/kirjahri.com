@@ -18,7 +18,7 @@ const config = {
         use: ['css-loader', 'sass-loader'],
       },
       {
-        test: /[\\/]images|node_modules[\\/].+(png|jpe?g|webp|ico|svg)$/i,
+        test: /[\\/]images|node_modules[\\/].+(png|jpe?g|webp|ico|svg|gif)$/i,
         type: 'asset/resource',
         generator: {
           filename: ({ filename }) => {
