@@ -1,1 +1,5 @@
-console.log('Hello world');
+/**
+ * @type {HTMLSpanElement}
+ */
+const year = document.getElementById('year');
+year.innerHTML = new Date().getFullYear();
