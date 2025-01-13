@@ -1,3 +1,23 @@
+$bg-color: rgba(
+  $color: rgb(18, 18, 18),
+  $alpha: 0.8,
+);
+$text-color: rgba(
+  $color: rgb(255, 255, 255),
+  $alpha: 0.8,
+);
+$border-color: rgba(
+  $color: rgb(200, 200, 200),
+  $alpha: 0.1,
+);
+$section-bg-color: #101010;
+$section-border-color: #303030;
+
+@font-face {
+  font-family: basiic;
+  src: url('https://cinni.net/fonts/basiic.ttf') format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,10 +29,10 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: basiic, sans-serif;
   font-size: 1.6rem;
   background-image: url('@images/background.gif');
-  color: white;
+  color: $text-color;
 }
 
 .center {
@@ -42,16 +62,20 @@ body.center {
   > {
     * {
       padding: 10px;
-      border: 1px solid white;
+      background-color: $bg-color;
+      border: 1px solid $border-color;
+      border-radius: 5px;
     }
 
     header {
       grid-area: header;
+      background-color: transparent;
       border: 0;
     }
 
     .aside-left {
       grid-area: aside-left;
+      text-align: center;
     }
 
     main {
@@ -60,6 +84,7 @@ body.center {
 
     .aside-right {
       grid-area: aside-right;
+      text-align: center;
     }
 
     footer {
@@ -69,6 +94,7 @@ body.center {
 }
 
 header {
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -78,9 +104,7 @@ header {
   }
 
   li {
-    margin: 10px 0;
-    padding: 10px;
-    text-align: center;
+    margin: 5px 0;
 
     &:first-child {
       margin-top: 0;
@@ -91,14 +115,33 @@ header {
     }
 
     a {
-      text-decoration: none;
+      display: block;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+
+      &:hover {
+        background-color: #333;
+        color: white;
+      }
     }
   }
 }
 
-#statuscafe {
+section {
   padding: 5px;
-  border: 1px solid white;
+  background-color: $section-bg-color;
+  border: 1px solid $section-border-color;
+
+  hr {
+    color: $section-border-color;
+  }
+}
+
+section.nav {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
 }
 
 #statuscafe-author {
@@ -119,5 +162,10 @@ footer {
 
 hr {
   margin: 5px 0;
-  color: white;
+  color: $border-color;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
 }
