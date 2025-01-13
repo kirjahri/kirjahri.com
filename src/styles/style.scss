@@ -48,14 +48,14 @@ body.center {
 
 .container {
   margin: 0 auto;
-  width: 960px;
-
+  width: 100%;
+  max-width: 1024px;
   display: grid;
   grid:
     'header header header' auto
     'aside-left main aside-right' 1fr
     'footer footer footer' auto
-    / minmax(100px, auto) 1fr minmax(100px, auto);
+    / minmax(100px, 200px) 1fr minmax(100px, 200px);
   gap: 10px;
   padding: 10px;
 
@@ -132,6 +132,7 @@ section {
   padding: 5px;
   background-color: $section-bg-color;
   border: 1px solid $section-border-color;
+  border-radius: 5px;
 
   hr {
     color: $section-border-color;
