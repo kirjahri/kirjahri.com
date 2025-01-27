@@ -26,20 +26,11 @@ jobs:
           node-version: 20
           cache: pnpm
 
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Build
-        env:
-          BASE_PATH: '/${{ github.event.repository.name }}'
+      - name: Install dependencies and build
         run: |
+          pnpm install
           pnpm run build
 
-  deploy:
-    needs: build_site
-    runs-on: ubuntu-latest
-
-    steps:
       - name: Deploy
         uses: bcomnes/deploy-to-neocities@v3
         with:
