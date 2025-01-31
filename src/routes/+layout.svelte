@@ -1,4 +1,5 @@
 <script lang="ts">
+  import '@fontsource/inter';
   import Header from '$lib/components/Header.svelte';
   import Sidebar from '$lib/components/Sidebar.svelte';
   import Footer from '$lib/components/Footer.svelte';
@@ -31,6 +32,7 @@
   }
 
   :global(body) {
+    font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
     height: 100vh;
     display: flex;
