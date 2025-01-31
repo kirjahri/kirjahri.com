@@ -47,9 +47,9 @@
     display: grid;
     grid:
       'header header' auto
-      'sidebar main' 3fr
+      'sidebar main' 1fr
       'footer footer' auto
-      / auto 3fr;
+      / auto 1fr;
     gap: 5px;
     padding: 5px;
     border: 1px solid black;
