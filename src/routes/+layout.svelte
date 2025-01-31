@@ -53,11 +53,13 @@
     gap: 5px;
     padding: 5px;
     border: 1px solid black;
+    border-radius: 5px;
   }
 
   .container > :global(*) {
     padding: 5px;
     border: 1px solid black;
+    border-radius: 5px;
   }
 
   .container > :global(header) {
