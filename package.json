@@ -32,6 +32,7 @@
     "vite": "^6.0.0"
   },
   "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.1.1",
     "@fontsource/inter": "^5.1.1"
   }
 }

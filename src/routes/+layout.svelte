@@ -1,5 +1,6 @@
 <script lang="ts">
   import '@fontsource/inter';
+  import '@fontsource/ibm-plex-mono';
 
   import Header from '$lib/components/Header.svelte';
   import Sidebar from '$lib/components/Sidebar.svelte';
