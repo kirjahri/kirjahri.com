@@ -56,7 +56,7 @@
       'header header' auto
       'sidebar main' 1fr
       'footer footer' auto
-      / auto 1fr;
+      / 0.5fr 3fr;
     gap: 5px;
     padding: 5px;
     border: 1px solid black;
