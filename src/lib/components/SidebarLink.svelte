@@ -11,11 +11,6 @@
 <style>
   li {
     text-align: center;
-    margin: 5px 0;
-  }
-
-  li:last-child {
-    margin-bottom: 0;
   }
 
   li a {
