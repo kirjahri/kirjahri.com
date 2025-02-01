@@ -23,19 +23,18 @@
     padding: 5px;
     color: var(--secondary-color);
     background-color: var(--primary-color);
-    border: 1px solid var(--secondary-color);
     border-radius: 100vmax;
     text-decoration: none;
   }
 
-  li a:hover {
-    text-decoration: underline;
+  li a:not(.active):hover {
+    background-color: var(--sidebar-lnk-hover);
+    transition: 0.15s;
   }
 
   li a.active {
     color: var(--primary-color);
     background-color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
     animation: bounce-in-out 0.3s;
     cursor: default;
   }
