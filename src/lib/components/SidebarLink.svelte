@@ -24,7 +24,7 @@
     color: var(--secondary-color);
     background-color: var(--primary-color);
     border: 1px solid var(--secondary-color);
-    border-radius: 5px;
+    border-radius: 100vmax;
     text-decoration: none;
   }
 
