@@ -18,7 +18,7 @@
     padding: 5px;
     color: var(--secondary-color);
     background-color: var(--primary-color);
-    border-radius: 100vmax;
+    border-radius: 5px;
     text-decoration: none;
   }
 
