@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+  import { fade } from 'svelte/transition';
+
   import '@fontsource/inter/400.css';
   import '@fontsource/inter/700.css';
   import '@fontsource/ibm-plex-mono/400.css';
@@ -8,6 +11,9 @@
   import Sidebar from '$lib/components/Sidebar.svelte';
   import Footer from '$lib/components/Footer.svelte';
 
+  let visible = $state(false);
+  onMount(() => (visible = true));
+
   let { children } = $props();
 </script>
 
@@ -15,14 +21,16 @@
   <title>kirjahri.com</title>
 </svelte:head>
 
-<div class="container">
-  <Header />
-  <Sidebar />
-  <main>
-    {@render children()}
-  </main>
-  <Footer />
-</div>
+{#if visible}
+  <div class="container" transition:fade={{ duration: 300 }}>
+    <Header />
+    <Sidebar />
+    <main>
+      {@render children()}
+    </main>
+    <Footer />
+  </div>
+{/if}
 
 <style>
   :global(:root) {
