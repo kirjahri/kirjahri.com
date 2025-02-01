@@ -23,6 +23,11 @@
 </div>
 
 <style>
+  :global(:root) {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+  }
+
   :global(*) {
     margin: 0;
     padding: 0;
