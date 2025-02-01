@@ -6,6 +6,7 @@
   <h1>sidebar</h1>
   <ul>
     <SidebarLink path="/" name="home" />
+    <SidebarLink path="/about" name="about" />
   </ul>
 </nav>
 
