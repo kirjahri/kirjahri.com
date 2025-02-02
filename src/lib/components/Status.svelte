@@ -15,9 +15,16 @@
       {data.face}
       {data.timeAgo}
     </div>
-    <div class="status-content">{data.content || 'loading...'}</div>
+    <div class="status-content">{@html data.content || 'loading...'}</div>
   </div>
 </section>
 
 <style>
+  .status-username {
+    margin-bottom: 5px;
+  }
+
+  .status-content {
+    margin: 0 10px 5px 10px;
+  }
 </style>
