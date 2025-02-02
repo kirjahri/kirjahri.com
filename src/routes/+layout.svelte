@@ -36,6 +36,7 @@
   :global(:root) {
     --padding: 10px;
     --gap: 10px;
+    --border-width: 2px;
     --border-radius: 10px;
 
     --primary: #ffffff;
@@ -65,7 +66,7 @@
   }
 
   :global(section) {
-    border: 1px dashed var(--secondary);
+    border: var(--border-width) dashed var(--secondary);
     padding: var(--padding);
     border-radius: var(--border-radius);
   }
@@ -93,13 +94,13 @@
       / 0.5fr 3fr;
     gap: var(--gap);
     padding: var(--padding);
-    border: 1px solid var(--secondary);
+    border: var(--border-width) solid var(--secondary);
     border-radius: var(--border-radius);
   }
 
   .container > :global(*) {
     padding: var(--padding);
-    border: 1px solid var(--secondary);
+    border: var(--border-width) solid var(--secondary);
     border-radius: var(--border-radius);
   }
 
