@@ -71,13 +71,13 @@
       / 0.5fr 3fr;
     gap: 5px;
     padding: 5px;
-    border: 1px solid black;
+    border: 1px solid var(--secondary);
     border-radius: 5px;
   }
 
   .container > :global(*) {
     padding: 5px;
-    border: 1px solid black;
+    border: 1px solid var(--secondary);
     border-radius: 5px;
   }
 
