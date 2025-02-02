@@ -42,6 +42,8 @@
     --primary: #ffffff;
     --secondary: #008000;
 
+    --text: #006400;
+
     --sidebar-lnk-hover: rgba(0, 0, 0, 0.1);
   }
 
@@ -63,6 +65,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--text);
   }
 
   :global(section) {
@@ -81,6 +84,10 @@
 
   :global(hr, p) {
     margin: 5px 0;
+  }
+
+  :global(hr) {
+    color: var(--text);
   }
 
   .container {
