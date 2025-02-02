@@ -40,7 +40,7 @@
     --border-radius: 10px;
 
     --primary: #ffffff;
-    --secondary: #000000;
+    --secondary: #008000;
 
     --sidebar-lnk-hover: rgba(0, 0, 0, 0.1);
   }
