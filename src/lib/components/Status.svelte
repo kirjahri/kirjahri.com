@@ -10,12 +10,12 @@
   <div class="status">
     <div class="status-username">
       <a href="https://status.cafe/users/kirjahri" target="_blank"
-        >{data.author}</a
+        >{data.author || 'loading...'}</a
       >
       {data.face}
       {data.timeAgo}
     </div>
-    <div class="status-content">{data.content}</div>
+    <div class="status-content">{data.content || 'loading...'}</div>
   </div>
 </section>
 
