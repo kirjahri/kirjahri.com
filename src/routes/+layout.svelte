@@ -114,6 +114,8 @@
 
   .container > :global(header) {
     grid-area: header;
+    border: none;
+    border-radius: 100vmax;
   }
 
   .container > :global(nav) {
