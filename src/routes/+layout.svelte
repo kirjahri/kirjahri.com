@@ -34,8 +34,8 @@
 
 <style>
   :global(:root) {
-    --primary-color: #ffffff;
-    --secondary-color: #000000;
+    --primary: #ffffff;
+    --secondary: #000000;
 
     --sidebar-lnk-hover: rgba(0, 0, 0, 0.1);
   }

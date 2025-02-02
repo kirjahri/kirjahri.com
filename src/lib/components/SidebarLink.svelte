@@ -15,8 +15,8 @@
   li a {
     display: block;
     padding: 5px;
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
+    color: var(--secondary);
+    background-color: var(--primary);
     border-radius: 5px;
     text-decoration: none;
   }
@@ -27,8 +27,8 @@
   }
 
   li a.active {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+    color: var(--primary);
+    background-color: var(--secondary);
     animation: bounce-in-out 0.3s;
     cursor: default;
   }
