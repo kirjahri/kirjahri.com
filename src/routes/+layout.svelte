@@ -34,6 +34,10 @@
 
 <style>
   :global(:root) {
+    --padding: 10px;
+    --gap: 10px;
+    --border-radius: 10px;
+
     --primary: #ffffff;
     --secondary: #000000;
 
@@ -69,16 +73,16 @@
       'sidebar main' 1fr
       'footer footer' auto
       / 0.5fr 3fr;
-    gap: 5px;
-    padding: 5px;
+    gap: var(--gap);
+    padding: var(--padding);
     border: 1px solid var(--secondary);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
   }
 
   .container > :global(*) {
-    padding: 5px;
+    padding: var(--padding);
     border: 1px solid var(--secondary);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
   }
 
   .container > :global(header) {

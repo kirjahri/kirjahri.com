@@ -14,10 +14,10 @@
 
   li a {
     display: block;
-    padding: 5px;
+    padding: var(--padding);
     color: var(--secondary);
     background-color: var(--primary);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     text-decoration: none;
   }
 
