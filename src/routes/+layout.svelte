@@ -103,6 +103,7 @@
     padding: var(--padding);
     border: var(--border-width) solid var(--secondary);
     border-radius: var(--border-radius);
+    background-color: var(--primary);
   }
 
   .container > :global(*) {
