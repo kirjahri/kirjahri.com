@@ -73,6 +73,15 @@
     border: var(--border-width) dashed var(--secondary);
     padding: var(--padding);
     border-radius: var(--border-radius);
+    margin: 5px 0;
+  }
+
+  :global(section:first-child) {
+    margin-top: 0;
+  }
+
+  :global(section:last-child) {
+    margin-bottom: 0;
   }
 
   :global(section > :first-child) {
@@ -131,5 +140,9 @@
 
   .container > :global(footer) {
     grid-area: footer;
+  }
+
+  main {
+    display: grid;
   }
 </style>
