@@ -8,6 +8,7 @@
   import '@fontsource/ibm-plex-mono/700.css';
 
   import Header from '$lib/components/Header.svelte';
+  import Navbar from '$lib/components/Navbar.svelte';
   import Sidebar from '$lib/components/Sidebar.svelte';
   import Footer from '$lib/components/Footer.svelte';
 
@@ -24,10 +25,11 @@
 {#if visible}
   <div class="container" transition:fade={{ duration: 300 }}>
     <Header />
-    <Sidebar />
+    <Navbar />
     <main>
       {@render children()}
     </main>
+    <Sidebar />
     <Footer />
   </div>
 {/if}
@@ -101,14 +103,14 @@
   }
 
   .container {
-    width: 960px;
+    width: 1440px;
     height: 90%;
     display: grid;
     grid:
-      'header header' auto
-      'sidebar main' 1fr
-      'footer footer' auto
-      / 0.5fr 3fr;
+      'header header header' auto
+      'nav main sidebar' 1fr
+      'footer footer footer' auto
+      / 1fr 5fr 1fr;
     gap: var(--gap);
     padding: var(--padding);
     border: var(--border-width) solid var(--secondary);
@@ -131,6 +133,10 @@
   }
 
   .container > :global(nav) {
+    grid-area: nav;
+  }
+
+  .container > :global(aside) {
     grid-area: sidebar;
   }
 
