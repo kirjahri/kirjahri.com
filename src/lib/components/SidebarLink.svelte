@@ -1,12 +1,11 @@
 <script lang="ts">
   import { page } from '$app/state';
 
-  let { path, name } = $props();
-
-  let active = $derived(page.url.pathname === path);
+  export let path: string;
+  export let name: string;
 </script>
 
-<li><a href={path} class:active>{name}</a></li>
+<li><a href={path} class:active={page.url.pathname === path}>{name}</a></li>
 
 <style>
   li {
