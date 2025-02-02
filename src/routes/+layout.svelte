@@ -64,6 +64,24 @@
     align-items: center;
   }
 
+  :global(section) {
+    border: 1px dashed var(--secondary);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+  }
+
+  :global(section > :first-child) {
+    margin-top: 0;
+  }
+
+  :global(section > :last-child) {
+    margin-bottom: 0;
+  }
+
+  :global(hr, p) {
+    margin: 5px 0;
+  }
+
   .container {
     width: 60%;
     height: 60%;
