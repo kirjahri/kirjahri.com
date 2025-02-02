@@ -101,7 +101,7 @@
   }
 
   .container {
-    width: 1440px;
+    width: 960px;
     height: 90%;
     display: grid;
     grid:
