@@ -38,6 +38,7 @@
     --gap: 10px;
     --border-width: 2px;
     --border-radius: 10px;
+    --outline-width: 3px;
 
     --primary: #ffffff;
     --secondary: #008000;
@@ -102,6 +103,7 @@
     gap: var(--gap);
     padding: var(--padding);
     border: var(--border-width) solid var(--secondary);
+    outline: var(--outline-width) solid var(--primary);
     border-radius: var(--border-radius);
     background-color: var(--primary);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
