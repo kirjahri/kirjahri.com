@@ -92,8 +92,8 @@
   }
 
   .container {
-    width: 60%;
-    height: 60%;
+    width: 1440px;
+    height: 90%;
     display: grid;
     grid:
       'header header' auto
