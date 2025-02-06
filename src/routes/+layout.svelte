@@ -43,6 +43,18 @@
 
 <style lang="scss">
   :global {
+    @mixin margin-between-y($size) {
+      margin: $size 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
     :root {
       --padding: 10px;
       --gap: 10px;
@@ -80,31 +92,20 @@
     }
 
     section {
+      @include margin-between-y(5px);
+
       border: var(--border-width) dashed var(--secondary);
       padding: var(--padding);
       border-radius: var(--border-radius);
-      margin: 5px 0;
-    }
 
-    section:first-child {
-      margin-top: 0;
-    }
-
-    section:last-child {
-      margin-bottom: 0;
-    }
-
-    section > :first-child {
-      margin-top: 0;
-    }
-
-    section > :last-child {
-      margin-bottom: 0;
+      & > * {
+        @include margin-between-y(5px);
+      }
     }
 
     hr,
     p {
-      margin: 5px 0;
+      @include margin-between-y(5px);
     }
 
     hr {
