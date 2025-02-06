@@ -15,7 +15,7 @@
   let visible = $state(false);
   onMount(() => (visible = true));
 
-  let { children } = $props();
+  let { data, children } = $props();
 </script>
 
 <svelte:head>
@@ -27,7 +27,14 @@
     <Header />
     <Navbar />
     <main>
-      {@render children()}
+      {#key data.pathname}
+        <div
+          in:fade={{ delay: 100, duration: 100 }}
+          out:fade={{ duration: 100 }}
+        >
+          {@render children()}
+        </div>
+      {/key}
     </main>
     <Sidebar />
     <Footer />
