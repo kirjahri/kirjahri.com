@@ -12,8 +12,8 @@
   import Sidebar from '$lib/components/Sidebar.svelte';
   import Footer from '$lib/components/Footer.svelte';
 
-  let visible = $state(false);
-  onMount(() => (visible = true));
+  let isVisible = $state(false);
+  onMount(() => (isVisible = true));
 
   let { data, children } = $props();
 </script>
@@ -22,7 +22,7 @@
   <title>kirjahri.com</title>
 </svelte:head>
 
-{#if visible}
+{#if isVisible}
   <div class="container" transition:fade={{ duration: 300 }}>
     <Header />
     <Navbar />
