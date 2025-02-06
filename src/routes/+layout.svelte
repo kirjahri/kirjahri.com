@@ -41,72 +41,75 @@
   </div>
 {/if}
 
-<style>
-  :global(:root) {
-    --padding: 10px;
-    --gap: 10px;
-    --border-width: 2px;
-    --border-radius: 10px;
-    --outline-width: 3px;
+<style lang="scss">
+  :global {
+    :root {
+      --padding: 10px;
+      --gap: 10px;
+      --border-width: 2px;
+      --border-radius: 10px;
+      --outline-width: 3px;
 
-    --primary: #ffffff;
-    --secondary: #008000;
+      --primary: #ffffff;
+      --secondary: #008000;
 
-    --text: #006400;
+      --text: #006400;
 
-    --sidebar-lnk-hover: rgba(0, 0, 0, 0.1);
-  }
+      --sidebar-lnk-hover: rgba(0, 0, 0, 0.1);
+    }
 
-  :global(*) {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  :global(html) {
-    font-size: 62.5%;
-  }
+    html {
+      font-size: 62.5%;
+    }
 
-  :global(body) {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.6rem;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--text);
-  }
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.6rem;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: var(--text);
+    }
 
-  :global(section) {
-    border: var(--border-width) dashed var(--secondary);
-    padding: var(--padding);
-    border-radius: var(--border-radius);
-    margin: 5px 0;
-  }
+    section {
+      border: var(--border-width) dashed var(--secondary);
+      padding: var(--padding);
+      border-radius: var(--border-radius);
+      margin: 5px 0;
+    }
 
-  :global(section:first-child) {
-    margin-top: 0;
-  }
+    section:first-child {
+      margin-top: 0;
+    }
 
-  :global(section:last-child) {
-    margin-bottom: 0;
-  }
+    section:last-child {
+      margin-bottom: 0;
+    }
 
-  :global(section > :first-child) {
-    margin-top: 0;
-  }
+    section > :first-child {
+      margin-top: 0;
+    }
 
-  :global(section > :last-child) {
-    margin-bottom: 0;
-  }
+    section > :last-child {
+      margin-bottom: 0;
+    }
 
-  :global(hr, p) {
-    margin: 5px 0;
-  }
+    hr,
+    p {
+      margin: 5px 0;
+    }
 
-  :global(hr) {
-    color: var(--text);
+    hr {
+      color: var(--text);
+    }
   }
 
   .container {
