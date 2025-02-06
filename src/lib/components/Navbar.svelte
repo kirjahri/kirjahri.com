@@ -9,7 +9,7 @@
   </ul>
 </nav>
 
-<style>
+<style lang="scss">
   ul {
     list-style-type: none;
   }

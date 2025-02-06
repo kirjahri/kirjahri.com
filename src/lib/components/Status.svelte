@@ -19,7 +19,7 @@
   </div>
 </section>
 
-<style>
+<style lang="scss">
   .status-username {
     margin-bottom: 5px;
   }

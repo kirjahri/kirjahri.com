@@ -7,35 +7,35 @@
 
 <li><a href={path} class:active={page.url.pathname === path}>{name}</a></li>
 
-<style>
+<style lang="scss">
   li {
     text-align: center;
-  }
 
-  li a {
-    display: block;
-    padding: var(--padding);
-    color: var(--secondary);
-    background-color: var(--primary);
-    border-radius: var(--border-radius);
-    text-decoration: none;
-  }
+    a {
+      display: block;
+      padding: var(--padding);
+      color: var(--secondary);
+      background-color: var(--primary);
+      border-radius: var(--border-radius);
+      text-decoration: none;
 
-  li a:not(.active):hover {
-    background-color: var(--sidebar-lnk-hover);
-    transition: 0.15s;
-  }
+      &:not(.active):hover {
+        background-color: var(--sidebar-lnk-hover);
+        transition: 0.15s;
+      }
 
-  li a.active {
-    color: var(--primary);
-    background-color: var(--secondary);
-    animation: bounce-in-out 0.3s;
-    cursor: default;
-  }
+      &.active {
+        color: var(--primary);
+        background-color: var(--secondary);
+        animation: bounce-in-out 0.3s;
+        cursor: default;
+      }
 
-  li a:not(.active):active {
-    transform: scale(0.9);
-    transition: 0.15s;
+      &:not(.active):active {
+        transform: scale(0.9);
+        transition: 0.15s;
+      }
+    }
   }
 
   @keyframes bounce-in-out {

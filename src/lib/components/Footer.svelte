@@ -2,7 +2,7 @@
   <p>&copy; {new Date().getFullYear()} kirjahri.com</p>
 </footer>
 
-<style>
+<style lang="scss">
   footer {
     text-align: center;
   }

@@ -2,7 +2,7 @@
   <h1>kirjahri.com</h1>
 </header>
 
-<style>
+<style lang="scss">
   header {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 3.2rem;
