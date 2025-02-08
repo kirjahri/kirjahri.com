@@ -23,7 +23,7 @@
 </svelte:head>
 
 {#if isVisible}
-  <div class="container" transition:fade={{ duration: 300 }}>
+  <div class="app" transition:fade={{ duration: 300 }}>
     <Header />
     <Navbar />
     <main>
@@ -113,7 +113,7 @@
     }
   }
 
-  .container {
+  .app {
     width: 1440px;
     height: 90%;
     display: grid;
@@ -131,31 +131,31 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
-  .container > :global(*) {
+  .app > :global(*) {
     padding: var(--padding);
     border: var(--border-width) solid var(--secondary);
     border-radius: var(--border-radius);
   }
 
-  .container > :global(header) {
+  .app > :global(header) {
     grid-area: header;
     border: none;
     border-radius: 100vmax;
   }
 
-  .container > :global(nav) {
+  .app > :global(nav) {
     grid-area: nav;
   }
 
-  .container > :global(aside) {
+  .app > :global(aside) {
     grid-area: sidebar;
   }
 
-  .container > main {
+  .app > main {
     grid-area: main;
   }
 
-  .container > :global(footer) {
+  .app > :global(footer) {
     grid-area: footer;
   }
 
