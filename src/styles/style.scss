@@ -1,0 +1,70 @@
+@mixin margin-between-y($size) {
+  margin: $size 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+:global {
+  :root {
+    --padding: 10px;
+    --gap: 10px;
+    --border-width: 2px;
+    --border-radius: 10px;
+    --outline-width: 3px;
+
+    --primary: #ffffff;
+    --secondary: #008000;
+
+    --text: #006400;
+
+    --sidebar-lnk-hover: rgba(0, 0, 0, 0.1);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+  }
+
+  section {
+    @include margin-between-y(5px);
+
+    border: var(--border-width) dashed var(--secondary);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+
+    & > * {
+      @include margin-between-y(5px);
+    }
+  }
+
+  hr,
+  p {
+    @include margin-between-y(5px);
+  }
+
+  hr {
+    color: var(--text);
+  }
+}
