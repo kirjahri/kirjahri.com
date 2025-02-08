@@ -1,11 +1,11 @@
 <script lang="ts">
-  import NavLink from './NavLink.svelte';
+  import Tab from './Tab.svelte';
 </script>
 
 <nav>
   <ul>
-    <NavLink path="/" name="home" />
-    <NavLink path="/about" name="about" />
+    <Tab path="/" name="home" />
+    <Tab path="/about" name="about" />
   </ul>
 </nav>
 
