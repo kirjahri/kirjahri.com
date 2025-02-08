@@ -8,7 +8,7 @@ const config = {
     vitePreprocess(),
     sveltePreprocess({
       scss: {
-        prependData: "@use 'src/styles/style.scss';",
+        prependData: `@use 'src/styles/style.scss';`,
       },
     }),
   ],

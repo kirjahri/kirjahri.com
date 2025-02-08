@@ -13,20 +13,20 @@
 
     a {
       display: block;
-      padding: var(--padding);
-      color: var(--secondary);
-      background-color: var(--primary);
-      border-radius: var(--border-radius);
+      padding: $padding;
+      color: $secondary;
+      background-color: $primary;
+      border-radius: $border-radius;
       text-decoration: none;
 
       &:not(.active):hover {
-        background-color: var(--sidebar-lnk-hover);
+        background-color: $sidebar-lnk-hover;
         transition: 0.15s;
       }
 
       &.active {
-        color: var(--primary);
-        background-color: var(--secondary);
+        color: $primary;
+        background-color: $secondary;
         animation: bounce-in-out 0.3s;
         cursor: default;
       }

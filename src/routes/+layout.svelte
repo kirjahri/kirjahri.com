@@ -51,19 +51,19 @@
       'nav main sidebar' 1fr
       'footer footer footer' auto
       / 1fr 5fr 1fr;
-    gap: var(--gap);
-    padding: var(--padding);
-    border: var(--border-width) solid var(--secondary);
-    outline: var(--outline-width) solid var(--primary);
-    border-radius: var(--border-radius);
-    background-color: var(--primary);
+    gap: $gap;
+    padding: $padding;
+    border: $border-width solid $secondary;
+    outline: $outline-width solid $primary;
+    border-radius: $border-radius;
+    background-color: $primary;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
   .app > :global(*) {
-    padding: var(--padding);
-    border: var(--border-width) solid var(--secondary);
-    border-radius: var(--border-radius);
+    padding: $padding;
+    border: $border-width solid $secondary;
+    border-radius: $border-radius;
   }
 
   .app > :global(header) {
