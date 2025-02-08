@@ -1,14 +1,4 @@
-@mixin margin-between-y($size) {
-  margin: $size 0;
-
-  &:first-child {
-    margin-top: 0;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
+@use 'mixins' as *;
 
 :global {
   :root {
