@@ -42,6 +42,8 @@
 {/if}
 
 <style lang="scss">
+  @use '../styles/style.scss';
+
   .app {
     width: 1440px;
     height: 90%;
