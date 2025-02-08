@@ -9,6 +9,9 @@ const config = {
     adapter: adapter({
       fallback: 'not_found.html',
     }),
+    alias: {
+      $styles: 'src/styles',
+    },
   },
 };
 
