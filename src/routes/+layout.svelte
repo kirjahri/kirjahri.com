@@ -42,7 +42,7 @@
 {/if}
 
 <style lang="scss">
-  @use '$styles/style.scss';
+  @use '$styles/app.scss';
 
   .app {
     width: 1440px;
