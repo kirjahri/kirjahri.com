@@ -32,7 +32,7 @@
           in:fade={{ delay: 100, duration: 100 }}
           out:fade={{ duration: 100 }}
         >
-          {@render children()}
+          {@render children?.()}
         </div>
       {/key}
     </main>
