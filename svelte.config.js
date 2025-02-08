@@ -4,7 +4,14 @@ import { sveltePreprocess } from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  preprocess: [vitePreprocess(), sveltePreprocess()],
+  preprocess: [
+    vitePreprocess(),
+    sveltePreprocess({
+      scss: {
+        prependData: "@use 'src/styles/style.scss';",
+      },
+    }),
+  ],
   kit: {
     adapter: adapter({
       fallback: 'not_found.html',
