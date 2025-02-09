@@ -2,21 +2,6 @@
 @use 'variables' as *;
 
 :global {
-  :root {
-    --padding: 10px;
-    --gap: 10px;
-    --border-width: 2px;
-    --border-radius: 10px;
-    --outline-width: 3px;
-
-    --primary: #ffffff;
-    --secondary: #008000;
-
-    --text: #006400;
-
-    --sidebar-lnk-hover: rgba(0, 0, 0, 0.1);
-  }
-
   * {
     margin: 0;
     padding: 0;
