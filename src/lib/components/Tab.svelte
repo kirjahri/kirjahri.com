@@ -1,44 +1,69 @@
 <script lang="ts">
   import { page } from '$app/state';
+  import type { Icon } from '@tabler/icons-svelte';
 
-  export let path: string;
-  export let name: string;
+  export let content: string;
+  export let href: string;
+  export let Icon: Icon;
 </script>
 
-<li><a href={path} class:active={page.url.pathname === path}>{name}</a></li>
+<li>
+  <a {href} class:active={page.url.pathname === href}><Icon />&nbsp;{content}</a
+  >
+</li>
 
 <style lang="scss">
   li {
-    text-align: center;
+    @include margin-between-y(5px);
 
     a {
-      display: block;
-      padding: $padding;
-      color: $secondary;
-      background-color: $primary;
-      border-radius: $border-radius;
-      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-      &:not(.active):hover {
-        background-color: $sidebar-lnk-hover;
-        transition: 0.15s;
+      font-size: 1.8rem;
+      font-weight: normal;
+      padding: $padding;
+      border-radius: $border-radius;
+      background-color: $primary;
+      transition: 0.15s;
+
+      & :global(svg) {
+        width: 22px;
+        height: 22px;
+        stroke-width: 1.5;
+      }
+
+      &:hover {
+        filter: none;
+        text-decoration: none;
+      }
+
+      &:not(.active) {
+        &:hover {
+          background-color: $sidebar-lnk-hover;
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
       }
 
       &.active {
+        font-weight: bold;
         color: $primary;
         background-color: $secondary;
-        animation: bounce-in-out 0.3s;
+        animation: bounce 0.3s;
         cursor: default;
-      }
 
-      &:not(.active):active {
-        transform: scale(0.9);
-        transition: 0.15s;
+        & :global(svg) {
+          stroke-width: 2.5;
+        }
       }
     }
   }
 
-  @keyframes bounce-in-out {
+  @keyframes bounce {
     from {
       transform: scale(0.9);
     }

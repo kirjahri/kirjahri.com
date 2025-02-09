@@ -1,11 +1,14 @@
 <script lang="ts">
+  import { IconHome } from '@tabler/icons-svelte';
+  import { IconInfoCircle } from '@tabler/icons-svelte';
+
   import Tab from './Tab.svelte';
 </script>
 
 <nav>
   <ul>
-    <Tab path="/" name="home" />
-    <Tab path="/about" name="about" />
+    <Tab content="home" href="/" Icon={IconHome} />
+    <Tab content="about" href="/about" Icon={IconInfoCircle} />
   </ul>
 </nav>
 
