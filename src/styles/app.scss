@@ -43,4 +43,17 @@
   hr {
     color: $text;
   }
+
+  a {
+    color: inherit;
+    font-weight: bold;
+  }
+
+  a:hover {
+    filter: brightness(120%);
+  }
+
+  a:visited {
+    color: inherit;
+  }
 }
