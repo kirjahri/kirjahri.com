@@ -52,7 +52,7 @@
       'header header header' auto
       'nav main sidebar' 1fr
       'footer footer footer' auto
-      / 1fr 5fr 1fr;
+      / 1.25fr 5fr 1.25fr;
     gap: $gap;
     padding: $padding;
     border: $border-width solid $secondary;
