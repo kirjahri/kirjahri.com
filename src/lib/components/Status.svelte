@@ -1,4 +1,6 @@
 <script lang="ts">
+  import ExternalLink from './ExternalLink.svelte';
+
   let data: any = $state({});
 
   fetch('https://status.cafe/users/kirjahri/status.json')
@@ -9,9 +11,13 @@
 <section>
   <div class="status">
     <div class="status-username">
-      <a href="https://status.cafe/users/kirjahri" target="_blank"
+      <!-- <a href="https://status.cafe/users/kirjahri" target="_blank"
         >{data.author || 'loading...'}</a
-      >
+      > -->
+      <ExternalLink
+        href="https://status.cafe/users/kirjahri"
+        content={data.author || 'loading...'}
+      />
       {data.face}
       {data.timeAgo}
     </div>
