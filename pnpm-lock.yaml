@@ -7,16 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@fontsource/ibm-plex-mono':
-        specifier: ^5.1.1
-        version: 5.1.1
-      '@fontsource/inter':
-        specifier: ^5.1.1
-        version: 5.1.1
-      '@tabler/icons-svelte':
-        specifier: ^3.30.0
-        version: 3.30.0(svelte@5.19.9)
     devDependencies:
       '@eslint/compat':
         specifier: ^1.2.6
@@ -24,6 +14,12 @@ importers:
       '@eslint/js':
         specifier: ^9.20.0
         version: 9.20.0
+      '@fontsource/ibm-plex-mono':
+        specifier: ^5.1.1
+        version: 5.1.1
+      '@fontsource/inter':
+        specifier: ^5.1.1
+        version: 5.1.1
       '@sveltejs/adapter-static':
         specifier: ^3.0.8
         version: 3.0.8(@sveltejs/kit@2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.9)(vite@6.1.0(sass@1.84.0)))(svelte@5.19.9)(vite@6.1.0(sass@1.84.0)))
@@ -33,6 +29,9 @@ importers:
       '@sveltejs/vite-plugin-svelte':
         specifier: ^5.0.3
         version: 5.0.3(svelte@5.19.9)(vite@6.1.0(sass@1.84.0))
+      '@tabler/icons-svelte':
+        specifier: ^3.30.0
+        version: 3.30.0(svelte@5.19.9)
       eslint:
         specifier: ^9.20.0
         version: 9.20.0
