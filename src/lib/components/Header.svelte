@@ -4,8 +4,8 @@
 
 <style lang="scss">
   header {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 3.2rem;
+    font-family: $font-family-mono;
+    font-size: $header-font-size;
     text-align: left;
     background-image: linear-gradient(to left, $secondary, transparent);
   }

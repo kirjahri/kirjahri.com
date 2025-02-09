@@ -1,4 +1,9 @@
+$font-family-sans: 'Inter', sans-serif;
+$font-family-mono: 'IBM Plex Mono', monospace;
+$font-size: 1.6rem;
+
 $padding: 10px;
+$margin: 5px;
 $gap: 10px;
 $border-width: 2px;
 $border-radius: 10px;
@@ -8,5 +13,7 @@ $primary: #ffffff;
 $secondary: #008000;
 
 $text: #006400;
+
+$header-font-size: 3.2rem;
 
 $sidebar-lnk-hover: rgba(0, 0, 0, 0.1);

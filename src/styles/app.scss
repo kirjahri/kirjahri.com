@@ -13,8 +13,8 @@
   }
 
   body {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.6rem;
+    font-family: $font-family-sans;
+    font-size: $font-size;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -24,23 +24,20 @@
   }
 
   section {
-    @include margin-between-y(5px);
+    @include margin-between-y($margin);
 
     border: $border-width dashed $secondary;
     padding: $padding;
     border-radius: $border-radius;
-
-    & > * {
-      @include margin-between-y(5px);
-    }
   }
 
-  hr,
   p {
-    @include margin-between-y(5px);
+    @include margin-between-y($margin);
   }
 
   hr {
+    @include margin-between-y($margin * 2);
+
     color: $text;
   }
 
