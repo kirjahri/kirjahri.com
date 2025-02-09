@@ -47,10 +47,12 @@
   a {
     color: inherit;
     font-weight: bold;
+    text-decoration: none;
   }
 
   a:hover {
     filter: brightness(120%);
+    text-decoration: underline;
   }
 
   a:visited {
