@@ -18,14 +18,14 @@
       <a href="/about">here.</a>
       for updates on this site, follow me on
       <ExternalLink
-        content="neocities,"
+        content="neocities"
         href="https://neocities.org/site/kirjahri"
       />. thanks for visiting!!
     </p>
 
     <p>
-      also, since this site's code is compiled, inspect elementing won't really
-      help you see how i did something. check out the <ExternalLink
+      also, since this site's code is compiled, using inspect element won't
+      really help you see how i did something. check out the <ExternalLink
         content="github repo"
         href="https://github.com/kirjahri/kirjahri.com"
       /> for this site if you want to do that (i don't mind people stealing my code),
