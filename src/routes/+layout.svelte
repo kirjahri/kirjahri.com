@@ -27,14 +27,7 @@
     <Header />
     <Navbar />
     <main>
-      {#key data.pathname}
-        <div
-          in:fade={{ delay: 100, duration: 100 }}
-          out:fade={{ duration: 100 }}
-        >
-          {@render children?.()}
-        </div>
-      {/key}
+      {@render children?.()}
     </main>
     <Sidebar />
     <Footer />
