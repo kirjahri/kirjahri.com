@@ -40,7 +40,7 @@
         new Date(
           Date.now() - new Date('3/29/2010').getTime(),
         ).getUTCFullYear() - 1970,
-      )} year old who learned how to program with a search engine and strong will
+      )} year old who learned how to program with a search engine and a strong will
       LOL
     </p>
 
