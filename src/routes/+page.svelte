@@ -1,9 +1,12 @@
 <script lang="ts">
   import ExternalLink from '$lib/components/ExternalLink.svelte';
+  import wooper from '$lib/assets/wooper.png';
 </script>
 
 <section>
   <div class="content">
+    <img alt="plushy of wooper" src={wooper} />
+
     <h1>home</h1>
     <hr />
 
@@ -47,3 +50,11 @@
     </p>
   </div>
 </section>
+
+<style lang="scss">
+  img {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+</style>
