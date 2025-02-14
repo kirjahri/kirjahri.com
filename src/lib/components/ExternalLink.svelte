@@ -7,12 +7,11 @@
   export let target: string = '_blank';
 </script>
 
-<a {href} {target}>{content}<IconExternalLink {size} {stroke} /></a>
+<a {href} {target}>{content}&nbsp;<IconExternalLink {size} {stroke} /></a>
 
 <style lang="scss">
   a {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
   }
 </style>

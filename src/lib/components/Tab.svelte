@@ -24,6 +24,7 @@
       padding: $padding;
       border-radius: $border-radius;
       background-color: $primary;
+      text-decoration: none;
       transition: 0.15s;
 
       & :global(svg) {

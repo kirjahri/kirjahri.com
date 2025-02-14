@@ -1,16 +1,49 @@
+<script lang="ts">
+  import ExternalLink from '$lib/components/ExternalLink.svelte';
+</script>
+
 <section>
-  <h1>home</h1>
-  <hr />
+  <div class="content">
+    <h1>home</h1>
+    <hr />
 
-  <p>
-    welcome to my site, kirjahri.com!! as you may or may not be able to tell,
-    this site is <strong>under construction;</strong> for now, enjoy this sample
-    text:
-  </p>
+    <p>
+      hi! welcome to my site, kirjahri.com! here, i am the webmaster, kirja<sup
+        >(any/all)</sup
+      >. you will be able to find info on all of my hobbies/interests, from
+      *art, music, games, and more. learn more about me and this site
+      <a href="/about">here.</a>
+      for updates on this site, either follow me on
+      <ExternalLink
+        content="neocities,"
+        href="https://neocities.org/site/kirjahri"
+      /> or check out the for this site. thanks for visiting!!
+    </p>
 
-  <p>
-    lorem ipsum dolor sit amet consectetur, adipisicing elit. culpa quod,
-    consequatur in explicabo aperiam, fugiat eos quia voluptate porro, odit
-    neque? voluptate earum facere, rerum asperiores possimus sunt vel nobis?
-  </p>
+    <p>
+      also, since this site's code is compiled, inspect elementing won't really
+      help you see how i did something. check out the <ExternalLink
+        content="github repo"
+        href="https://github.com/kirjahri/kirjahri.com"
+      /> for this site if you want to do that (i don't mind people stealing my code),
+      though you will need some knowledge of <ExternalLink
+        content="svelte"
+        href="https://svelte.dev/docs/svelte"
+      /> and <ExternalLink
+        content="sveltekit"
+        href="https://svelte.dev/docs/kit"
+      /> to understand what is going on. feel free to contribute btw as i am just
+      a dumb {Math.abs(
+        new Date(
+          Date.now() - new Date('3/29/2010').getTime(),
+        ).getUTCFullYear() - 1970,
+      )} year old who learned how to program with a search engine and strong will
+      LOL
+    </p>
+
+    <p style="font-size: 1.2rem">
+      *idk how i'm gonna do the art page since i don't rlly wanna have to upload
+      every piece of artwork i've made to here :P i'll figure something out
+    </p>
+  </div>
 </section>
