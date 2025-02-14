@@ -1,17 +1,17 @@
 <script lang="ts">
   import { IconExternalLink } from '@tabler/icons-svelte';
 
-  export let href: string;
+  export let content, href: string;
+  export let size: number = 16;
+  export let stroke: number = 3;
   export let target: string = '_blank';
-  export let content: string;
 </script>
 
-<a {href} {target}>{content} <IconExternalLink /></a>
+<a {href} {target}>{content}&nbsp;<IconExternalLink {size} {stroke} /></a>
 
 <style lang="scss">
-  a :global(svg) {
-    width: 16px;
-    height: 16px;
-    stroke-width: 3;
+  a {
+    display: inline-flex;
+    align-items: center;
   }
 </style>

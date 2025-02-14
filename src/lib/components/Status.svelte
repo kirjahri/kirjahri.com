@@ -11,15 +11,15 @@
 
 <section>
   <h1>
-    <ExternalLink href="https://status.cafe" content="status.cafe" />
+    <ExternalLink content="status.cafe" href="https://status.cafe" size={20} />
   </h1>
   <hr />
   <section>
     <div class="status">
       <div class="status-username">
         <ExternalLink
-          href={`https://status.cafe/users/${username}`}
           content={data.author || username}
+          href={`https://status.cafe/users/${username}`}
         /> &bull;
         {data.face || '...'} &bull;
         {data.timeAgo || '...'}
