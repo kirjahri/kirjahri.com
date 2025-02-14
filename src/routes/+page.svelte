@@ -11,10 +11,10 @@
     <hr />
 
     <p>
-      hi! welcome to my site, kirjahri.com! here, i am the webmaster, kirja<sup
+      hi! welcome to my site, kirjahri.com! i am the webmaster, kirja<sup
         >(any/all)</sup
-      >. you will be able to find info on all of my hobbies/interests, from
-      *art, music, games, and more. learn more about me and this site
+      >. here, you will be able to find info on all of my hobbies/interests,
+      from *art, music, games, and more. learn more about me and this site
       <a href="/about">here.</a>
       for updates on this site, either follow me on
       <ExternalLink
