@@ -16,11 +16,11 @@
       >. here, you will be able to find info on all of my hobbies/interests,
       from *art, music, games, and more. learn more about me and this site
       <a href="/about">here.</a>
-      for updates on this site, either follow me on
+      for updates on this site, follow me on
       <ExternalLink
         content="neocities,"
         href="https://neocities.org/site/kirjahri"
-      /> or check out the for this site. thanks for visiting!!
+      />. thanks for visiting!!
     </p>
 
     <p>
