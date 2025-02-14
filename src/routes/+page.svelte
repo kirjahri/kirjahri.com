@@ -18,9 +18,9 @@
       <a href="/about">here.</a>
       for updates on this site, follow me on
       <ExternalLink
-        content="neocities"
+        content="neocities."
         href="https://neocities.org/site/kirjahri"
-      />. thanks for visiting!!
+      /> thanks for visiting!!
     </p>
 
     <p>
