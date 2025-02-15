@@ -4,9 +4,8 @@
 </script>
 
 <section>
+  <img alt="plushy of wooper" src={wooper} />
   <div class="content">
-    <img alt="plushy of wooper" src={wooper} />
-
     <h1>home</h1>
     <hr />
 
@@ -29,19 +28,18 @@
         content="github repo"
         href="https://github.com/kirjahri/kirjahri.com"
       /> for this site if you want to do that (i don't mind people stealing my code),
-      though you will need some knowledge of <ExternalLink
+      though you will need some knowledge on <ExternalLink
         content="svelte"
         href="https://svelte.dev/docs/svelte"
       /> and <ExternalLink
         content="sveltekit"
         href="https://svelte.dev/docs/kit"
-      /> to understand what is going on. feel free to contribute btw as i am just
+      /> to understand what is going on. feel free to contribute btw as i'm just
       a dumb {Math.abs(
         new Date(
           Date.now() - new Date('3/29/2010').getTime(),
         ).getUTCFullYear() - 1970,
-      )} year old who learned how to program with a search engine and a strong will
-      LOL
+      )} year old who learned how to program through google and resilience
     </p>
 
     <p style="font-size: 1.2rem">
@@ -52,8 +50,20 @@
 </section>
 
 <style lang="scss">
+  $img-size: 300px;
+
+  section {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .content {
+    width: 760px - $img-size;
+  }
+
   img {
-    width: 300px;
+    width: $img-size;
+    height: $img-size;
     display: block;
     margin: 0 auto;
   }
